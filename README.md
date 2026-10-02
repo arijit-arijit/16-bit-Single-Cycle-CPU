@@ -1,4 +1,4 @@
-# 16-bit Single-Cycle RISC 5 CPU
+# 16-bit Single-Cycle RISC CPU
 
 A custom 16-bit single-cycle RISC CPU designed and implemented from scratch
 using Logisim-Evolution.
@@ -84,16 +84,36 @@ The assembler also supports pseudo-instructions such as:
 - `LI`
 - `HALT`
 
-See [`ISA.md`](ISA.md) for the complete instruction encoding,
-operations, immediate ranges, and pseudo-instruction expansion.
+---
+
+## Instruction Set Architecture
+
+> **[View the complete ISA documentation →](ISA.md)**  
+> Complete reference for instruction encoding, operations, immediate ranges, and pseudo-instruction expansion.
+
+---
 
 ---
 
 ## Assembler
 
-A custom two-pass assembler is included with the project.
+A custom two-pass assembler written in C is included with the project.
 
-It converts assembly source code:
+It converts assembly source programs into Logisim-Evolution-compatible machine code.
 
-```text
-program.asm
+### Input
+
+Assembly programs use the `.asm` format.
+
+Example:
+
+```asm
+CLR R1
+LI R2, 1
+
+ADD R3, R1, R2
+MOV R1, R2
+MOV R2, R3
+
+SW R0, R2
+HALT
