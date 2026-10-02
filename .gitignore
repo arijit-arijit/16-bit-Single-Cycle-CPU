@@ -1,0 +1,22 @@
+# Compiled binaries
+assembler/assembler
+assembler/*.o
+assembler/*.exe
+
+# Assembled output (regeneratable from .asm — keep fib.hex tracked if you
+# want it visible without building, otherwise ignore it too)
+*.hex
+
+# Logisim backup/lock files
+*.circ~
+*.circ.bak
+*.lock
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
