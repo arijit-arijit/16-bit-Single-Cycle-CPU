@@ -84,7 +84,7 @@ The assembler also supports pseudo-instructions such as:
 - `LI`
 - `HALT`
 
-See [`isa/ISA.md`](isa/ISA.md) for the complete instruction encoding,
+See [`ISA.md`](ISA.md) for the complete instruction encoding,
 operations, immediate ranges, and pseudo-instruction expansion.
 
 ---
