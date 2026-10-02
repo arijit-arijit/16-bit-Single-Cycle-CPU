@@ -1,4 +1,4 @@
-# 16-bit Single-Cycle RISC CPU
+# 16-bit Single-Cycle RISC 5 CPU
 
 A custom 16-bit single-cycle RISC CPU designed and implemented from scratch
 using Logisim-Evolution.
